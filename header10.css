@@ -18,6 +18,7 @@ body{
 }
 
 .navbar-light .navbar-brand {
+    position: relative;
     width: 106px;
     height: 32px;
     left: 2px;
@@ -102,6 +103,22 @@ body{
     color: #FFFFFF;
 }
 
+@media screen and (min-width: 1300px) {
+
+    body {
+        width: 1300px;
+    }
+
+    .container {
+        margin-top: 20px;
+        max-width: 1300px;
+        margin-left: 130px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+}
+
 @media screen and (min-width: 1024px) {
 
     .main-text {
@@ -133,6 +150,10 @@ body{
     .navbar {
         display: flex;
         justify-content: space-between;
+    }
+
+    .navbar-light .navbar-brand {
+        top: 0px;
     }
 
     .nav {
@@ -197,12 +218,8 @@ body{
 
     .nav {
         display: none;
-        width: 100%;
-    }
-
-    .nav {
-        width: 100%;
         flex-direction: column;
+        width: 100%;
     }
 
     .nav-link {
