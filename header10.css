@@ -7,14 +7,14 @@
 body{
     background: url(./assets/hero_1.png) no-repeat center center fixed;
     background-size: cover;
-    width: 1300px;
-    height: 300px;
+    max-width: 1140px;
+    height: 675px;
     background-color: #482BE7;
     box-sizing: border-box;
 }
 
 .container{
-    margin-top: 10px;
+    margin: 15px;
 }
 
 .navbar-light .navbar-brand {
@@ -32,15 +32,26 @@ body{
     color: #FFFFFF;
 }
 
+.nav {
+    position: relative;
+    left: -10px;
+}
+
 .nav-link {
-    height: 26px;
+    position: relative;
+    top: 2px;
+    left: -120px;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    line-height: 26px;
     display: flex;
     align-items: center;
     color: #FFFFFF;
+}
+
+.fa {
+    position: relative;
+    top: 6px;
 }
 
 .hamburger {
@@ -66,9 +77,6 @@ body{
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 22px;    
-    display: flex;
-    align-items: center;
     text-align: center;    
     color: #FFFFFF;
     outline: none;
@@ -119,7 +127,17 @@ body{
     
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1024px) {
+
+    .nav-link {
+        position: relative;
+        left: 0;
+    }
+
+    .act-btn {
+        position: relative;
+        left: 70px;
+    }
 
     .main-text {
         font-size: 80px;
@@ -160,15 +178,26 @@ body{
         display: flex;
         flex-wrap: wrap;
         padding-top: 10px;
+        position: relative;
+        left: 2px;
+    }
+    
+    .fa {
+        position: relative;
+        top: 6px;
     }
 
     .nav-link {
         padding: 5px 10px;
+        position: relative;
+        top: 3px;
+        left: -1px;
     }
 
     .act-btn{
         position: relative;
-        top: 5px;
+        top: -1px;
+        left: 15px;
     }
     
 
@@ -224,19 +253,20 @@ body{
 
     .nav-link {
         font-size: 17px;    
+        left: 6px;
     }
 
     .nav.active{
         display: block;
         position: relative;
         top: 5px;
-        left: -15px;
+        left: -10px;
     }
 
     .act-btn {
         position: relative;
         top: 10px;
-        left: -12px;
+        left: -2px;
     }
 
     .site-desc {
@@ -252,5 +282,6 @@ body{
     .para-text {
         font-size: 22px;
         line-height: 30px;
+        top: 40px;
     }
 }
